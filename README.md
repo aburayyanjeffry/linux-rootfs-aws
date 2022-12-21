@@ -18,28 +18,43 @@ This can be archive by creating a volume snapshot
 
 ## 3. Get to know the filesystem format and EC2 type ==
 Execute the following  to know filesystem format. Look under the "Type" column. 
- df -hT
-
+```bash
+df -hT
+```
+ 
 To know EC2 type. If the disk name starts from letter `n` then it is Nitro. If the disk name starts from letter `x` then it is type Xen
- lsbk
-
+```bash
+lsbk
+```
+ 
 ## 4. Extend the partition ==
 A Nitro disk might look like this nvme0n1p1 . nvme0n1 is the disk name and p1 is the partition number. To extend the partition p1 
- growpart /dev/nvme0n1 1
-
+```bash
+growpart /dev/nvme0n1 1
+```
+ 
 A Xen disk might look like this xvda1. xvda is the disk name and 1 is the partition number. To extend the partition 1
- growpart /dev/xvda 1
-
+```bash
+growpart /dev/xvda 1
+```
+ 
 To verify the the partition has been extended issue the following command
- lsblk
-
+```bash
+lsblk
+```
+ 
 ## 5. Extend the filesystem ==
 To extend root filesystem with xfs filesystem
- xfs_growfs -d /
-
+```bash
+xfs_growfs -d /
+```
+ 
 To extend root filesystem with ext4 filesystem at Nitro
- resize2fs /dev/nvme0n1p1
-
+```bash
+resize2fs /dev/nvme0n1p1
+```
+ 
 To extend rott filesystem with ext4 filesystem at Xen
- resize2fs /dev/xvda1
-
+```bash
+resize2fs /dev/xvda1
+```
