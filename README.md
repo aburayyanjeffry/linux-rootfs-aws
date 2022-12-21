@@ -65,5 +65,3 @@ To extend rott filesystem with ext4 filesystem at Xen
 resize2fs /dev/xvda1
 ```
 
-eg:
-![filesystem](img/filesystem.png)
