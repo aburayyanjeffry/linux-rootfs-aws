@@ -6,7 +6,7 @@ This can be archive by creating a volume snapshot
 
  1. AWS Console -> EC2 -> Instances -> <Desired Instance ID> -> Storage -> <Desired Volume ID> 
  2. Right click at the Volume ID and select "Create Snapshot"
- ![snapshot](img/01-snapshot.png)
+ c
  3. Enter the description and click "Create Snapshot" 
  4. Wait until the snapshot to be "Completed". To check go to   AWS Console -> EC2 - > Snapshots -> look for the snapshot description.
  
@@ -45,7 +45,10 @@ To verify the the partition has been extended issue the following command
 ```bash
 lsblk
 ```
- 
+
+eg:
+![partition](img/partition.png)
+
 ## 5. Extend the filesystem ==
 To extend root filesystem with xfs filesystem
 ```bash
@@ -61,3 +64,6 @@ To extend rott filesystem with ext4 filesystem at Xen
 ```bash
 resize2fs /dev/xvda1
 ```
+
+eg:
+![filesystem](img/filesystem.png)
