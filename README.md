@@ -46,9 +46,6 @@ To verify the the partition has been extended issue the following command
 lsblk
 ```
 
-eg:
-![partition](img/partition.png)
-
 ## 5. Extend the filesystem ==
 To extend root filesystem with xfs filesystem
 ```bash
