@@ -6,7 +6,7 @@ This can be archive by creating a volume snapshot
 
  1. AWS Console -> EC2 -> Instances -> <Desired Instance ID> -> Storage -> <Desired Volume ID> 
  2. Right click at the Volume ID and select "Create Snapshot"
- ![modify](img/01-create.png)
+ ![modify](img/01-snapshot.png)
  3. Enter the description and click "Create Snapshot" 
  4. Wait until the snapshot to be "Completed". To check go to   AWS Console -> EC2 - > Snapshots -> look for the snapshot description.
  
