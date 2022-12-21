@@ -8,7 +8,7 @@ This can be archive by creating a volume snapshot
  2. Right click at the Volume ID and select "Create Snapshot"
  3. Enter the description and click "Create Snapshot" 
  4. Wait until the snapshot to be "Completed". To check go to   AWS Console -> EC2 - > Snapshots -> look for the snapshot description.
- [snapshot](img/01-snapshot.png)
+ ![snapshot](img/01-snapshot.png)
 
 ## 2. Modify the EC2 storage size ==
  1. AWS Console -> EC2 -> Instances -> <Desired Instance ID> -> Storage -> <Desired Volume ID> 
