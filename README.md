@@ -6,13 +6,15 @@ This can be archive by creating a volume snapshot
 
  1. AWS Console -> EC2 -> Instances -> <Desired Instance ID> -> Storage -> <Desired Volume ID> 
  2. Right click at the Volume ID and select "Create Snapshot"
+ ![snapshot](img/01-snapshot.png)
  3. Enter the description and click "Create Snapshot" 
  4. Wait until the snapshot to be "Completed". To check go to   AWS Console -> EC2 - > Snapshots -> look for the snapshot description.
- ![snapshot](img/01-snapshot.png)
+ 
 
 ## 2. Modify the EC2 storage size ==
  1. AWS Console -> EC2 -> Instances -> <Desired Instance ID> -> Storage -> <Desired Volume ID> 
  2. Right click at the Volume ID and select "Modify Volume"
+ ![modify](img/03-modify.png)
  3. Enter the "Size"
  4. Click "Modify"
  5. Wait for the  "Volume State" to be "In-Use"
